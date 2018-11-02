@@ -32,12 +32,12 @@ public class SwaggerConfig {
     }
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("api文档")
-                .description("restful 风格接口")
+                //.title("api文档")
+                //.description("restful 风格接口")
                 //服务条款网址
                 // .termsOfServiceUrl("http://www.huangt.top")
-                .version("1.0")
-                .contact(new Contact("LittleTry涛涛", "https://www.jianshu.com/u/f4aa5f961bd7", "1109394634@qq.com"))
+                //.version("1.0")
+                //.contact(new Contact("LittleTry涛涛", "https://www.jianshu.com/u/f4aa5f961bd7", "1109394634@qq.com"))
                 .build();
     }
 }
