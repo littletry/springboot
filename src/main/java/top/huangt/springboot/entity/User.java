@@ -61,6 +61,8 @@ public class User {
     @ApiModelProperty(value = "用户最后一次登录时间",hidden = true)
     private String lastTime;
 
+    private String phoneNumber;
+
     public String getId() {
         return id;
     }
@@ -141,6 +143,14 @@ public class User {
         this.lastTime = lastTime;
     }
 
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -154,6 +164,7 @@ public class User {
                 ", description='" + description + '\'' +
                 ", regTime='" + regTime + '\'' +
                 ", lastTime='" + lastTime + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
 }
